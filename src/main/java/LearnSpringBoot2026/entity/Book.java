@@ -11,6 +11,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@JsonPropertyOrder({ "id", "title", "author" })
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
